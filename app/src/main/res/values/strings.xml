@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RickAndMortyDemo</string>
+    <string name="no_results">Пусто!</string>
+    <string name="connection_error">Интернет соединение отсутствует! Показанны ранее загруженные данные</string>
+    <string name="internet_connection_error">Интернет соединение отсутствует. Детальная инфоормация не может быть отображена</string>
+    <string name="retry">Повторить</string>
+    <string name="spices">"раса: "</string>
+    <string name="gender">"пол: "</string>
+    <string name="status">"статус: "</string>
+    <string name="location">"последнее известное местоположение: "</string>
+    <string name="episode">"кол-во эпизодов, в которых упоминался данный персонаж: "</string>
+
+</resources>

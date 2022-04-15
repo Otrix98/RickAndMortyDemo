@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    tools:context=".ui.DetailFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/listToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple"
+        android:minHeight="?attr/actionBarSize">
+        <TextView
+            android:id="@+id/barTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:maxLength="15"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:src="@drawable/no_image"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_margin="16dp"
+        android:layout_gravity="center"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content">
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/genderTextView"
+        android:id="@+id/speciesTextView"
+        android:textColor="@color/white"
+        android:padding="16dp"
+        android:background="@drawable/item_shape"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+    <TextView
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/speciesTextView"
+        android:id="@+id/genderTextView"
+        android:textSize="20sp"
+        android:layout_width="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/speciesTextView"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:padding="16dp"
+        android:background="@drawable/item_shape"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+            android:id="@+id/statusTextView"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:padding="16dp"
+                android:background="@drawable/item_shape"/>
+
+            <TextView
+                android:id="@+id/locationTextView"
+                android:textSize="17sp"
+                android:layout_width="match_parent"
+                android:layout_margin="16dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/holo_green"
+                android:padding="16dp"
+                android:background="@drawable/item_shape"/>
+
+            <TextView
+                android:id="@+id/episodesTextView"
+                android:textSize="17sp"
+                android:layout_width="match_parent"
+                android:layout_margin="16dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/blue"
+                android:padding="16dp"
+                android:background="@drawable/item_shape"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>
